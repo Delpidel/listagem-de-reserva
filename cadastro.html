@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="..\Helena Delpizzo\favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="cadastro-form" id="cadastro-form">
+        <h1>Faça sua reserva!</h1>
+
+        <div class="input-area">
+          <label class="campo-input" for="quarto">Quarto</label><br />
+          <select id="quarto">
+            <option value="">Selecione um quarto</option>
+            <option value="quarto1">Quarto 1</option>
+            <option value="quarto2">Quarto 2</option>
+            <option value="quarto3">Quarto 3</option>
+            <span id="error-quarto" class="texto-erro" hidden></span>
+          </select>
+        </div>
+
+        <div class="campo-input">
+          <label for="nome">Nome completo:</label><br />
+          <input id="nome-completo" type="text" placeholder="Nome" />
+          <span id="error-nome" class="texto-erro" hidden></span>
+        </div>
+
+        <div class="campo-input">
+          <label for="cpf">CPF:</label><br />
+          <input id="cpf" type="text" placeholder="CPF" />
+          <span id="error-cpf" class="texto-erro" hidden></span>
+        </div>
+
+        <div class="campo-input">
+          <label for="inicio">Data de entrada:</label><br />
+          <input id="entrada" type="date" />
+          <span id="error-entrada" class="texto-erro" hidden></span>
+        </div>
+
+        <div class="campo-input">
+          <label for="fim">Data de saída:</label><br />
+          <input id="saida" type="date" />
+          <span id="error-saida" class="texto-erro" hidden></span>
+        </div>
+        <br />
+
+        <button class="login-button" id="login-button" type="submit">
+          Reservar
+        </button>
+      </form>
+    </div>
+
+    <script src="scripts/cadastro.js" type="module"></script>
+  </body>
+</html>

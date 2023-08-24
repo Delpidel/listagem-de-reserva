@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="..\Helena Delpizzo\favicon.ico" type="image/x-icon" />
+    <title>Gerenciamento de reservas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="gerenciamento">Gerenciamento de reservas</h1>
+      <button class="logout-button" id="logout" type="submit">Sair</button>
+      <table class="tabela-reservas" border="1">
+        <thead>
+          <tr>
+            <th>Nº quarto</th>
+            <th>Cliente</th>
+            <th>CPF</th>
+            <th>Entrada</th>
+            <th>Saída</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="table-body" width="300px"></tbody>
+      </table>
+    </div>
+    <script type="module" src="./scripts/home.js"></script>
+  </body>
+</html>
